@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+import "../src/styles/main.css";
 class App extends Component {
   render() {
     return (

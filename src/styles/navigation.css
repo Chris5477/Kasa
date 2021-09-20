@@ -1,0 +1,18 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation a {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ff6060;
+  padding: 10px;
+  text-align: right;
+}
+
+/* @media screen and (max-width:798px){
+
+    
+} */

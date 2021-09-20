@@ -1,0 +1,26 @@
+.error{
+    color: #FF6060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.code-error {
+  font-weight: bold;
+  font-size: 288px;
+  margin: 80px 0;
+}
+.txt-error{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.back-home{
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.back-home:visited{
+    color: #FF6060;
+}

@@ -1,0 +1,56 @@
+.sheet-annoncement{
+    width: 100%;
+    height: auto;
+}
+
+.main-info, .secondary-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+}
+.nameHouse{
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.loc{
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.owner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-profil{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.tags{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.tag{
+    background-color: #FF6060;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 10px;
+}

@@ -10,7 +10,7 @@ class Annoncement extends Component{
 
         return(
             <>
-            {kasa.map(el => <Card el={el} key={el.id} />)}
+            {kasa.map((el, index) => <Card el={el} key={el.id} index={index} />)}
             </>
         )
     }

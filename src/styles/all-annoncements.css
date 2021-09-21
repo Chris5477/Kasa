@@ -1,11 +1,13 @@
 .all-annoncements{
-    width: 95%;
+    width: 90%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-gap: 70px;
+    margin: auto;
     justify-content: center;
     background-color: #F6F6F6;
-    padding: 50px;
+    padding: 70px 0;
     border-radius: 25px;
+    
 }

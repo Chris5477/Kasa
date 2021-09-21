@@ -1,0 +1,17 @@
+.tags{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.tag{
+    background-color: #FF6060;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 10px;
+    
+}

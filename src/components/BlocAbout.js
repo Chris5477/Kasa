@@ -33,8 +33,7 @@ class BlocAbout extends Component {
       <div className="bloc-about">
         <div className="bloc">
           <div className="head-bloc">
-            <p>{this.props.children}</p>
-            <span className="fas fa-chevron-up"></span>
+            <p className="head-bloc-about">{this.props.children} <span className="fas fa-chevron-up"></span></p>
           </div>
           <p className="txt-bloc">{res}</p>
         </div>

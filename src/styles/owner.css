@@ -1,0 +1,13 @@
+.owner{
+    display: flex;
+    justify-content: flex-end;;
+    align-items: center;
+
+}
+
+.picture-profil{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    margin-left: 20px;
+}

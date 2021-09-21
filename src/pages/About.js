@@ -12,7 +12,7 @@ class About extends Component {
         return (
             <div className="about">
                 <Header />
-                <Bannier picture={"img/about-bannier.png"} />
+                <Bannier picture={"img/about-bannier.jpg"} />
                 <BlocAbout>Fiabilité</BlocAbout>
                 <BlocAbout>Respect</BlocAbout>
                 <BlocAbout>Service</BlocAbout>

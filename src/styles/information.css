@@ -43,3 +43,21 @@
     color: #FFF;
 }
 
+
+@media screen and (max-width : 798px){
+    
+    .heading-box{
+        font-size: 13px;
+    }
+    
+    .description{
+        font-size: 12px;
+    }
+    
+    .element{
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+    
+}
+

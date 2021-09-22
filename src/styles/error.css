@@ -24,3 +24,22 @@
 .back-home:visited{
     color: #FF6060;
 }
+
+@media screen and (max-width : 798px){
+    .code-error {
+        font-weight: 700;
+        font-size: 96px;
+      }
+
+      .txt-error{
+        font-size: 18px;
+        text-align: center;
+        padding: 5px 100px;
+    }
+
+    .back-home{
+        font-size: 14px;
+        margin-top: 70px;
+    }
+    
+}

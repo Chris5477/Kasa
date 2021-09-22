@@ -9,7 +9,7 @@ class Owner extends Component{
     render(){
         return(
             <div className="owner">
-              <p>{this.state.nameOwner}</p>
+              <p className="name-owner">{this.state.nameOwner}</p>
               <img className="picture-profil" src={this.state.picture} alt="avatar" />
             </div>
         )

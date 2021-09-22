@@ -5,7 +5,7 @@ class Bannier extends Component {
 
     state = this.props
     render(){
-        console.log(this.state)
+        
         return(
             <div className="bannier-picture">
                 <img className="img-bannier" src={this.state.picture} alt="bannière" /> 

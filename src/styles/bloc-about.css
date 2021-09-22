@@ -35,3 +35,27 @@
   border-radius: 10px;
   
 }
+
+
+@media screen and (max-width : 798px){
+  .bloc {
+    width: 95%;
+    margin: 20px auto;
+    
+  }
+  
+  .head-bloc {
+    font-size: 13px;
+  }
+  
+  .head-bloc-about{
+    padding:10px;
+    
+  }
+  
+  .txt-bloc {
+    padding: 10px;
+    font-size: 12px;
+  }
+  
+}

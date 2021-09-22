@@ -22,6 +22,18 @@
     padding: 10px;
 }
 
-/* @media screen and (max-width: 798px){
- 
-} */
+@media screen and (max-width: 798px){
+    
+    .cover{
+        height: 250px;
+    }
+    .title-card{
+    position: absolute;
+    bottom: 1%;
+    left: 4%;
+    background-color: rgba(53, 53, 53, 0.719);
+    color: #FFF;
+    width: 250px;
+    padding: 10px;
+}
+}

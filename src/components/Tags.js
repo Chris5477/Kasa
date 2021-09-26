@@ -4,13 +4,13 @@ import "../styles/tags.css"
 
 class Tags extends Component{
 
-    state = this.props
+    
 
     render(){
         return(
             <div className="tags">
-            {this.state.tag.map((el) => (
-              <p className="tag">{el}</p>
+            {this.props.tag.map((el, index) => (
+              <p key={index} className="tag">{el}</p>
             ))}
             </div>
         )

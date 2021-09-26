@@ -4,13 +4,13 @@ import "../styles/owner.css"
 
 class Owner extends Component{
     
-    state = this.props
-
+    
     render(){
+        const {nameOwner, picture} = this.props
         return(
             <div className="owner">
-              <p className="name-owner">{this.state.nameOwner}</p>
-              <img className="picture-profil" src={this.state.picture} alt="avatar" />
+              <p className="name-owner">{nameOwner}</p>
+              <img className="picture-profil" src={picture} alt="avatar" />
             </div>
         )
     }

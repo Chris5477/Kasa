@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 100px;
+  padding: 20px 0;
+  width: 90%;
+  margin: auto;
 }
 
 @media screen and (max-width: 798px) {

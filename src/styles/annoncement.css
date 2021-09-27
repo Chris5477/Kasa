@@ -1,14 +1,15 @@
 .sheet-annoncement {
-  width: 95%;
+  width: 100%;
   height: auto;
   margin: 0;
 }
 
 .bannier-house {
-  width: 82%;
+  width: 90%;
   height: 415px;
   border-radius: 25px;
   margin: auto;
+  position: relative;
 }
 
 .picture-house {
@@ -24,12 +25,29 @@
 }
 
 .container-annoncement {
-  width: 82%;
+  width: 90%;
   margin: auto;
 }
 
 .blocs-info {
   display: flex;
+  justify-content: space-between;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  font-size: 60px;
+  color: #fff;
+  transform: translateY(-50%);
+}
+
+.fa-chevron-left {
+  left: 2%;
+}
+.fa-chevron-right {
+  right: 2%;
 }
 @media screen and (max-width: 798px) {
   .sheet-annoncement {

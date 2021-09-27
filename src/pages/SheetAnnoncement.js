@@ -12,7 +12,7 @@ import Stars from "../components/Stars";
 
 class SheetAnnoncement extends Component {
   render() {
-    const currentData = this.props.location.params[0];
+    const currentData = this.props.location.params;
 
     return (
       <div className="sheet-annoncement">
@@ -26,15 +26,15 @@ class SheetAnnoncement extends Component {
             <Owner nameOwner={currentData.host.name} picture={currentData.host.picture} />
           </div>
           <div className="secondary-info">
-            <Tags tag={currentData.tags} /> {/* Probleme de key */}
-            <Stars />
+            <Tags tag={currentData.tags} /> 
+            <Stars rating={currentData.rating} />
           </div>
           <div className="blocs-info">
-            <Information detail={currentData.description}>Description</Information>
-            <Information atout={currentData.equipments}>Equipements</Information> {/* Probleme de key */}
+            <Information detail={currentData.description} title={"Description"} index={0} />
+            <Information atout={currentData.equipments} title={"Equipement"} index={1} />
           </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     );
   }

@@ -1,19 +1,26 @@
-import React , { Component } from 'react'
+import React, { Component } from "react";
 
-import "../styles/stars.css"
+import "../styles/stars.css";
 
-class Stars extends Component{
-    render(){
-        return(
-            <div className="stars">
-               <img src="img/star.png" alt="étoile"/>
-               <img src="img/star.png" alt="étoile"/>
-               <img src="img/star.png" alt="étoile"/>
-               <img src="img/star.png" alt="étoile"/>
-               <img src="img/star.png" alt="étoile"/>
-              </div>
-        )   
-     }
+class Stars extends Component {
+  render() {
+    let arrayStar = [];
+    for (let star = 0; star < this.props.rating; star++) {
+      arrayStar.push("img/star.png");
+    }
+
+    while (arrayStar.length !== 5) {
+      arrayStar.push("img/greyStar.png");
+    }
+
+    return (
+      <div className="stars">
+        {arrayStar.map((el, index) => (
+          <img className="imgStar" src={el} key={index} alt="étoile" />
+        ))}
+      </div>
+    );
+  }
 }
 
-export default Stars
+export default Stars;

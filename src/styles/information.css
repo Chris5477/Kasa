@@ -1,63 +1,78 @@
-.detail{
-    position: relative;
-
+.detail {
+  position: relative;
+  width: 50%;
+  height: 300px;
 }
 
-.heading-box{
-    background-color: #FF6060;
-    color: #FFF;
-    font-weight: 500;
-    font-size: 18px;
-    padding: 15px 15px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
+.heading-box {
+  background-color: #ff6060;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.description{
-    background-color: #f6f6f6;
-    color: #FF6060;
-    padding: 30px 15px;
-    position: relative;
-    z-index: -1;
-    top: -25px;
-    font-weight: 400;
-    font-size: 18px;
-    border-radius: 10px;
-    
+.description {
+  background-color: #f6f6f6;
+  color: #ff6060;
+  padding: 30px 15px;
+  position: relative;
+  z-index: -1;
+  top: -25px;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 10px;
 }
 
-.element{
-    background-color: #f6f6f6;
-    color: #FF6060;
-    padding: 20px 15px;
-    position: relative;
-    z-index: -1;
-    border-radius: 10px;
-    top: -25px;
-    font-weight: 400;
-    font-size: 18px;
+.list-element {
+  background-color: #f6f6f6;
+  color: #ff6060;
+  z-index: -1;
+  top: -25px;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 10px;
 }
 
-.fa-chevron-up{
-    color: #FFF;
+.fa-chevron-up {
+  color: #fff;
 }
 
+@media screen and (max-width: 798px) {
+  .heading-box {
+    font-size: 13px;
+  }
 
-@media screen and (max-width : 798px){
-    
-    .heading-box{
-        font-size: 13px;
-    }
-    
-    .description{
-        font-size: 12px;
-    }
-    
-    .element{
-        padding: 5px 15px;
-        font-size: 12px;
-    }
-    
+  .description {
+    font-size: 12px;
+  }
+
+  .element {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
 }
 
+.no-display {
+  display: none;
+}
+
+.addAnimation {
+  animation-name: transformIcon;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes transformIcon {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(180deg);
+  }
+}

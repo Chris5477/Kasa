@@ -1,39 +1,38 @@
-.card{
-    width: 100%;
-    position: relative;
-    cursor: pointer;
-    border-radius: 10px;
+.card {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
-.cover{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
+.cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.title-card{
+.title-card {
+  position: absolute;
+  bottom: 1%;
+  left: 4%;
+  background-color: rgba(53, 53, 53, 0.719);
+  color: #fff;
+  width: 250px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 798px) {
+  .cover {
+    height: 250px;
+  }
+  .title-card {
     position: absolute;
     bottom: 1%;
     left: 4%;
     background-color: rgba(53, 53, 53, 0.719);
-    color: #FFF;
+    color: #fff;
     width: 250px;
     padding: 10px;
-}
-
-@media screen and (max-width: 798px){
-    
-    .cover{
-        height: 250px;
-    }
-    .title-card{
-    position: absolute;
-    bottom: 1%;
-    left: 4%;
-    background-color: rgba(53, 53, 53, 0.719);
-    color: #FFF;
-    width: 250px;
-    padding: 10px;
-}
+  }
 }

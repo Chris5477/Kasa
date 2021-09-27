@@ -1,6 +1,11 @@
 import React, { Component } from "react";
-
 class BlocAbout extends Component {
+  handleClick = (index) => {
+    const allTextes = document.querySelectorAll(".txt-bloc");
+    allTextes[index].classList.toggle("no-txt");
+    const icons = document.querySelectorAll(".fa-chevron-up");
+    icons[index].classList.toggle("addAnimation");
+  };
   render() {
     let res = null;
 
@@ -32,7 +37,7 @@ class BlocAbout extends Component {
     return (
       <div className="bloc-about">
         <div className="bloc">
-          <div className="head-bloc">
+          <div className="head-bloc" onClick={() => this.handleClick(this.props.index)}>
             <p className="head-bloc-about">
               {this.props.children} <span className="fas fa-chevron-up"></span>
             </p>

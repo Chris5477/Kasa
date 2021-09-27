@@ -1,21 +1,18 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+@media screen and (max-width: 798px) {
+  .header {
+    width: 95%;
+    padding: 20px 0px;
   }
-  
-  
-  @media screen and (max-width: 798px) {
-    .header {
-      width: 95%;
-      padding: 20px 0px;
-    }
-    
-    .logo-header{
-      width: 40%;
-      padding-left: 15px;
-    }
-   
+
+  .logo-header {
+    width: 40%;
+    padding-left: 15px;
   }
-  
+}

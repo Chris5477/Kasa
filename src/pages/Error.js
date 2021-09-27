@@ -12,7 +12,9 @@ class Error extends Component {
         <div className="error">
           <h1 className="code-error">404</h1>
           <p className="txt-error">Oups! La page que vous demandez n'existe pas.</p>
-          <NavLink exact to="/" className="back-home">Retourner sur la page d'accueil</NavLink>
+          <NavLink exact to="/" className="back-home">
+            Retourner sur la page d'accueil
+          </NavLink>
         </div>
       </>
     );

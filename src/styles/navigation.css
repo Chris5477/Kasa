@@ -8,8 +8,14 @@
   font-size: 22px;
   font-weight: 500;
   color: #ff6060;
-  padding: 10px;
+  padding-bottom: 1px;
+  margin-right: 20px;
   text-align: right;
+}
+
+.nav-active{
+  border-bottom: 1px solid #ff6060;
+  
 }
 
 @media screen and (max-width: 798px) {

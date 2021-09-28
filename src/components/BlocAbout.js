@@ -12,22 +12,21 @@ class BlocAbout extends Component {
     switch (this.props.children) {
       case "Fiabilité":
         res =
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius animi tempore officia laudantium commodi amet cupiditate eveniet provident! Quibusdam alias aut laborum quam recusandae temporibus?";
+         "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
         break;
 
       case "Respect":
         res =
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius animi tempore officia laudantium commodi amet cupiditate eveniet provident! Quibusdam alias aut laborum quam recusandae temporibus?";
+          "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.";
         break;
 
       case "Service":
-        res =
-          "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.";
+        res = "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
         break;
 
       case "Responsabilité":
         res =
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius animi tempore officia laudantium commodi amet cupiditate eveniet provident! Quibusdam alias aut laborum quam recusandae temporibus?";
+          "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.";
         break;
 
       default:
@@ -36,14 +35,12 @@ class BlocAbout extends Component {
 
     return (
       <div className="bloc-about">
-        <div className="bloc">
           <div className="head-bloc" onClick={() => this.handleClick(this.props.index)}>
-            <p className="head-bloc-about">
+            <p className="head-bloc-txt">
               {this.props.children} <span className="fas fa-chevron-up"></span>
             </p>
           </div>
           <p className="txt-bloc">{res}</p>
-        </div>
       </div>
     );
   }

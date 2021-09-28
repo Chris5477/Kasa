@@ -1,17 +1,22 @@
 .tags {
   width: 35%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
 }
 
 .tag {
+  min-width: 115px;
+  min-height: 25px;
   background-color: #ff6060;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   font-weight: 500;
   padding: 10px 30px;
   border-radius: 10px;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 798px) {
@@ -20,9 +25,10 @@
     justify-content: flex-start;
     order: 2;
   }
+
   .tag {
-    background-color: #ff6060;
-    color: #fff;
+    min-width: 84px;
+    min-height: 18px;
     font-size: 10px;
     padding: 5px 30px;
     margin-right: 10px;

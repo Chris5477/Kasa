@@ -1,7 +1,7 @@
 .detail {
   position: relative;
   width: 45%;
-  height: 300px;
+  height: 200px;
 }
 
 .heading-box {
@@ -13,28 +13,20 @@
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 
-.description {
-  background-color: #f6f6f6;
-  color: #ff6060;
-  padding: 30px 15px;
-  position: relative;
-  z-index: -1;
-  top: -25px;
-  font-weight: 400;
-  font-size: 18px;
-  border-radius: 10px;
-}
-
+.description,
 .list-element {
+  min-height: 125px;
   background-color: #f6f6f6;
   color: #ff6060;
-  z-index: -1;
-  top: -25px;
   font-weight: 400;
   font-size: 18px;
   border-radius: 10px;
+  line-height: 25.67px;
+  padding: 20px 15px;
+  margin: 0;
 }
 
 .fa-chevron-up {
@@ -46,14 +38,11 @@
     font-size: 13px;
   }
 
-  .description {
+  .description, .element {
     font-size: 12px;
+    line-height: 17.11px;
   }
 
-  .element {
-    padding: 5px 15px;
-    font-size: 12px;
-  }
 }
 
 .no-display {

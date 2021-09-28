@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <div className="home">
         <Header />
-        <Bannier picture={"img/home-bannier.jpg"} text={"Chez vous, partout et ailleurs"}></Bannier>
+        <Bannier picture={"img/home-bannier.jpg"} textDesktop={"Chez vous, partout et ailleurs"} textMobile={"Chez vous, \n partout et ailleurs"}></Bannier>
         <AllAnnoncements />
         <Footer />
       </div>

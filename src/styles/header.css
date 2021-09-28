@@ -7,6 +7,10 @@
   margin: auto;
 }
 
+.logo-header{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 798px) {
   .header {
     width: 95%;

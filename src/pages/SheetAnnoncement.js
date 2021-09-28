@@ -10,17 +10,22 @@ import Tags from "../components/Tags";
 import Stars from "../components/Stars";
 
 import "../styles/annoncement.css";
+import  kasa  from "../data.json"
 
 class SheetAnnoncement extends Component {
   state = {
     index: 0,
   };
 
+  getAnnoncement = () => kasa.find(item => this.props.match.params.id === item.id) 
+  
+
   render() {
-    const currentData = this.props.location.params;
+    const currentData = this.getAnnoncement()
 
     return (
-      <div className="sheet-annoncement">
+   
+     <div className="sheet-annoncement">
         <Header />
         <div className="bannier-house">
           <span
@@ -48,7 +53,7 @@ class SheetAnnoncement extends Component {
           </div>
         </div>
         <Footer />
-      </div>
+      </div> 
     );
   }
 }

@@ -42,6 +42,7 @@
   font-size: 60px;
   color: #fff;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .fa-chevron-left {

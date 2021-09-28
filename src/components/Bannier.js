@@ -3,9 +3,9 @@ import React, { Component } from "react";
 import "../styles/bannier.css";
 class Bannier extends Component {
   render() {
-
+    
     const { picture, textDesktop, textMobile } = this.props;
-
+    console.log(picture)
     const device = window.screen.width < 798 ? textMobile : textDesktop
 
     return (

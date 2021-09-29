@@ -10,6 +10,7 @@
   border-radius: 25px;
   margin: auto;
   position: relative;
+  overflow: hidden;
 }
 
 .picture-house {
@@ -18,6 +19,29 @@
   border-radius: 25px;
   object-fit: cover;
 }
+
+.previous-picture{
+  animation: a 0.7s ease-in-out;
+}
+
+@keyframes a {
+  0%{transform: translateX(0);opacity: 1;}
+  10%{transform: translateX(0);opacity: 0.4;}
+  40%{transform: translateX(100%);opacity: 0.6;}
+  100%{transform: translateX(0); opacity: 1;}
+}
+
+.next-picture{
+  animation: b 0.7s linear;
+}
+
+@keyframes b {
+  0%{transform: translateX(0);opacity: 1;}
+  10%{transform: translateX(0);opacity: 0.4;}
+  40%{transform: translateX(-100%);opacity: 0.6;}
+  100%{transform: translateX(0); opacity: 1;}
+}
+
 .main-info,
 .secondary-info {
   display: flex;
@@ -136,4 +160,10 @@
     color: #fff;
     transform: translateY(-50%);
   }
+
+  .zone-click {
+    width: 10%;
+    height: 250px;
+
+}
 }

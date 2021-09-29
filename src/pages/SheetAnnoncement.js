@@ -19,6 +19,18 @@ class SheetAnnoncement extends Component {
 
   getAnnoncement = () => kasa.find((item) => this.props.match.params.id === item.id);
 
+  previousPicture = () => {
+    const photo = document.querySelector(".picture-house");
+    photo.classList.add("previous-picture");
+    setTimeout(() => photo.classList.remove("previous-picture"), 800);
+  };
+
+  nextPicture = () => {
+    const photo = document.querySelector(".picture-house");
+    photo.classList.add("next-picture");
+    setTimeout(() => photo.classList.remove("next-picture"), 800);
+  };
+
   render() {
     const currentData = this.getAnnoncement();
 
@@ -26,13 +38,20 @@ class SheetAnnoncement extends Component {
       <div className="sheet-annoncement">
         <Header />
         <div className="bannier-house">
-          <div className="zone-click prev" onClick={() => this.setState({ index: this.state.index === 0 ? this.state.index : this.state.index - 1 })}>
+          <div
+            className="zone-click prev"
+            onClick={() => this.setState({ index: this.state.index === 0 ? this.state.index : (this.state.index - 1) | this.previousPicture() })}
+          >
             <span className="fas fa-chevron-left"></span>
           </div>
           <img className="picture-house" src={currentData.pictures[this.state.index]} alt="bannière de l'annonce" />
           <div
             className="zone-click next"
-            onClick={() => this.setState({ index: this.state.index === currentData.pictures.length - 1 ? this.state.index : this.state.index + 1 })}
+            onClick={() =>
+              this.setState({
+                index: this.state.index === currentData.pictures.length - 1 ? this.state.index : (this.state.index + 1) | this.nextPicture(),
+              })
+            }
           >
             <span className="fas fa-chevron-right"></span>
           </div>

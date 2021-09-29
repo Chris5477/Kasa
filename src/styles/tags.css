@@ -23,7 +23,7 @@
   .tags {
     width: 100%;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: wrap ;
     order: 2;
   }
 

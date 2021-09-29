@@ -6,11 +6,11 @@ class Stars extends Component {
   render() {
     let arrayStar = [];
     for (let star = 0; star < this.props.rating; star++) {
-      arrayStar.push("../img/star.png");
+      arrayStar = [...arrayStar, "../img/star.png"];
     }
 
     while (arrayStar.length !== 5) {
-      arrayStar.push("../img/greyStar.png");
+      arrayStar = [...arrayStar, "../img/greyStar.png"];
     }
 
     return (

@@ -42,14 +42,63 @@
   font-size: 60px;
   color: #fff;
   transform: translateY(-50%);
-  cursor: pointer;
 }
 
 .fa-chevron-left {
-  left: 2%;
+  left: 25%;
 }
 .fa-chevron-right {
-  right: 2%;
+  right: 25%;
+}
+
+.zone-click:hover .fa-chevron-left,
+.zone-click:hover .fa-chevron-right {
+  animation: pulse 0.4s ease-in infinite;
+}
+
+@keyframes pulse {
+  0% {
+    top: 43%;
+    transform: scale(1);
+  }
+  50% {
+    top: 43%;
+    transform: scale(0.5);
+  }
+  80% {
+    top: 43%;
+    transform: scale(1.1);
+  }
+  100% {
+    top: 43%;
+    transform: scale(1);
+  }
+}
+
+.zone-click {
+  width: 5%;
+  height: 415px;
+  background-color: rgba(133, 131, 131, 0.021);
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.zone-click:hover {
+  background-color: rgba(126, 126, 126, 0.507);
+  transition: 0.4s;
+}
+
+.prev {
+  left: 0;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.next {
+  right: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 @media screen and (max-width: 798px) {
   .sheet-annoncement {
@@ -80,11 +129,11 @@
   }
 
   .fa-chevron-left,
-.fa-chevron-right {
-  position: absolute;
-  top: 50%;
-  font-size: 20px;
-  color: #fff;
-  transform: translateY(-50%);
-}
+  .fa-chevron-right {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    color: #fff;
+    transform: translateY(-50%);
+  }
 }

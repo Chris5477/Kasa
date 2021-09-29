@@ -5,7 +5,7 @@ import "../styles/information.css";
 class Information extends Component {
   handleClick = (index) => {
     const articles = document.querySelectorAll(".detail");
-    articles[index].lastChild.classList.toggle("no-display");
+    articles[index].lastChild.classList.toggle("no-txt");
     const icons = document.querySelectorAll(".fa-chevron-up");
     icons[index].classList.toggle("addAnimation");
   };

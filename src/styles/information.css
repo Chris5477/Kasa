@@ -47,8 +47,28 @@
 
 }
 
-.no-display {
-  display: none;
+.no-txt {
+  animation: moveTxt 0.7s ease-in-out forwards;
+  transform-origin: top;
+}
+
+
+@keyframes moveTxt {
+  0% {
+    transform: scaleY(1);
+  }
+
+  95% {
+    transform: scaleY(0);
+  }
+  100% {
+    transition: scaleý(0);
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    
+  }
 }
 
 .addAnimation {

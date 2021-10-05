@@ -10,4 +10,38 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "montserratregular";
 }
+
+/* @font-face {
+  font-family: 'montserratsemibold';
+  src: url('montserrat-semibold-webfont.woff2') format('woff2'),
+       url('montserrat-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+} */
+
+
+
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url('../police/montserrat-regular-webfont.woff2') format('woff2'),
+       url('../police/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+/* 
+@font-face {
+  font-family: 'montserratbold';
+  src: url('montserrat-bold-webfont.woff2') format('woff2'),
+       url('montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+} */

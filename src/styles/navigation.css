@@ -20,7 +20,8 @@
 
 @media screen and (max-width: 798px) {
   .navigation a {
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
+    margin-right: 10px;
   }
 }

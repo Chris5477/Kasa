@@ -15,9 +15,9 @@ class Information extends Component {
 
     const nameBloc =
       title === "Description" ? (
-        <p className="description">{detail}</p>
+        <p className="description no-txt">{detail}</p>
       ) : (
-        <ul className="list-element">
+        <ul className="list-element no-txt">
           {atout.map((el, index) => (
             <li className="element" key={index}>
               {el}

@@ -40,7 +40,7 @@ class BlocAbout extends Component {
               {this.props.children} <span className="fas fa-chevron-up"></span>
             </p>
           </div>
-          <p className="txt-bloc">{res}</p>
+          <p className="txt-bloc no-txt">{res}</p>
       </div>
     );
   }

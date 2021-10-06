@@ -1,6 +1,6 @@
 .bloc-about {
   width: 75%;
-  height: auto;
+  height: max-content;
   margin: 30px auto;
   overflow: hidden;
 }

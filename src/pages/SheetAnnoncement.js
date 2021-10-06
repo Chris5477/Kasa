@@ -34,27 +34,41 @@ class SheetAnnoncement extends Component {
   render() {
     const currentData = this.getAnnoncement();
 
+    const isBtnLeft =
+      currentData.pictures.length === 1 ? null : (
+        <div
+          className="zone-click prev"
+          onClick={() =>
+            this.state.index === 0
+              ? this.setState({ index: currentData.pictures.length - 1 }) | this.previousPicture()
+              : this.setState({ index: this.state.index - 1 }) | this.previousPicture()
+          }
+        >
+          <span className={"fas fa-chevron-left"}></span>
+        </div>
+      );
+
+    const isBtnRight =
+      currentData.pictures.length === 1 ? null : (
+        <div
+          className="zone-click next"
+          onClick={() =>
+            this.state.index === currentData.pictures.length - 1
+              ? this.setState({ index: 0 }) | this.nextPicture()
+              : this.setState({ index: this.state.index + 1 }) | this.nextPicture()
+          }
+        >
+          <span className={"fas fa-chevron-right"}></span>
+        </div>
+      );
+
     return (
       <div className="sheet-annoncement">
         <Header />
         <div className="bannier-house">
-          <div
-            className="zone-click prev"
-            onClick={() => this.setState({ index: this.state.index === 0 ? this.state.index : (this.state.index - 1) | this.previousPicture() })}
-          >
-            <span className="fas fa-chevron-left"></span>
-          </div>
+          {isBtnLeft}
           <img className="picture-house" src={currentData.pictures[this.state.index]} alt="bannière de l'annonce" />
-          <div
-            className="zone-click next"
-            onClick={() =>
-              this.setState({
-                index: this.state.index === currentData.pictures.length - 1 ? this.state.index : (this.state.index + 1) | this.nextPicture(),
-              })
-            }
-          >
-            <span className="fas fa-chevron-right"></span>
-          </div>
+          {isBtnRight}
         </div>
         <div className="container-annoncement">
           <div className="main-info">

@@ -40,8 +40,8 @@ class SheetAnnoncement extends Component {
           className="zone-click prev"
           onClick={() =>
             this.state.index === 0
-              ? this.setState({ index: currentData.pictures.length - 1 }) | this.previousPicture()
-              : this.setState({ index: this.state.index - 1 }) | this.previousPicture()
+              ? this.setState({ index: currentData.pictures.length - 1 }) & this.previousPicture()
+              : this.setState({ index: this.state.index - 1 }) & this.previousPicture()
           }
         >
           <span className={"fas fa-chevron-left"}></span>
@@ -54,8 +54,8 @@ class SheetAnnoncement extends Component {
           className="zone-click next"
           onClick={() =>
             this.state.index === currentData.pictures.length - 1
-              ? this.setState({ index: 0 }) | this.nextPicture()
-              : this.setState({ index: this.state.index + 1 }) | this.nextPicture()
+              ? this.setState({ index: 0 }) & this.nextPicture()
+              : this.setState({ index: this.state.index + 1 }) & this.nextPicture()
           }
         >
           <span className={"fas fa-chevron-right"}></span>

@@ -20,6 +20,18 @@
   object-fit: cover;
 }
 
+.numb-picture{
+  background-color: rgba(66, 65, 65, 0.226);
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  position: absolute;
+  font-size: 20px;
+  bottom : 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
 .previous-picture{
   animation: a 0.9s linear;
 }

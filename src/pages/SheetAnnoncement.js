@@ -69,6 +69,7 @@ class SheetAnnoncement extends Component {
           {isBtnLeft}
           <img className="picture-house" src={currentData.pictures[this.state.index]} alt="bannière de l'annonce" />
           {isBtnRight}
+          <span className="numb-picture"> {this.state.index + 1} / {currentData.pictures.length} </span>
         </div>
         <div className="container-annoncement">
           <div className="main-info">
